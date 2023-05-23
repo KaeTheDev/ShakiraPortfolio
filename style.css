@@ -1,0 +1,16 @@
+/* Makes menu items move to center when in hamburger menu */
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+
+/* Adds padding to background of jumbotron */
+.jumbotron.bg-info {
+    padding: 100px;
+    /* Adjust the padding value as per your needs */
+    border-radius: 10px;
+}
