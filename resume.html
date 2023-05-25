@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min .css">
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -12,42 +14,248 @@
 
 <body>
 
-        <!--NAVIGATION-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
-            <div class="container">
-                <a href="index.html" class="navbar-brand"><img src="./resources/shakira.png" alt="" width="100"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
-                    aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarItems">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resume.html">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="./resources/shakira.png" alt="" width="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
+                aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarItems">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--END OF NAVIGATION-->
+
+    <section class="bg-light py-5 mt-5">
+        <div class="container px-5">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center my-5">
+                        <h2 class="display-5">Resume</h2>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <!--END OF NAVIGATION-->
-<!--FOOTER SECTION-->
-    <h1 class="display-3">RESUME PAGE</h1>
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-
-            <div class="d-flex justify-content-center"><div class="small m-0">Copyright &copy; 2023 Shakira Reid-Thomas </div></div>
-            
         </div>
+    </section>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-5 col-xl-4 d-flex justify-content-center">
+                <!--Make a custom card class to hold the height and width-->
+                <div class="card" style="width: 18rem; height: 470px;">
+                    <img class="card-img-top" src="./resources/profile.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Shakira Reid-Thomas</h3>
+                        <h5 class="text-center text-muted">Full Stack Web Developer</h5>
+                        <h5 class="text-center">Detroit, Michigan</h5>
+                        <h6 class="text-center">example@email.com</h6>
+                        
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-7 col-xl-8 mt-4 mb-4">
+
+
+                <!--BEGINNING OF ACCORDIAN-->
+                <div class="accordion" id="resumeAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Work Experience
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#resumeAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!--JOB NUMBER 1-->
+                                    <div class="col-sm-2">
+                                        <p class="dates">2023-</p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h4 class="job-name">City of Detroit</h4>
+                                        <p class="job-title fw-light text-muted">Web Developer</p>
+                                        <p class="job-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, numquam!
+                                        </p>
+
+                                    </div>
+                                </div> <!--END OF ROW 1-->
+
+                                <div class="row">
+                                    <!--JOB NUMBER 2-->
+                                    <div class="col-sm-2">
+                                        <p class="dates">2022-2023</p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h4 class="job-name">Majorel</h4>
+                                        <p class="job-title fw-light text-muted">Apple Tech Support / Customer Service
+                                        </p>
+                                        <p class="job-description">
+                                            Handling the customer technical inquiries and driving the call to resolution
+                                            by troubleshooting the problems. This includes hardware, software,
+                                            networking and interactions with the host computer OS and applications.
+                                        </p>
+
+                                    </div>
+                                </div> <!--END OF ROW 2-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Education
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!--SCHOOL NUMBER 1-->
+                                    <div class="col-sm-2">
+                                        <p class="dates">2021-2022</p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h4 class="school-name">Apple Developer Academy</h4>
+                                        <p class="school-title fw-light text-muted">Student</p>
+                                        <p class="school-description">
+                                            Business, Coding, Design Fundamentals
+                                            Swift / SwiftUI training
+                                        </p>
+
+                                    </div>
+                                </div> <!--END OF ROW 1-->
+
+                                <div class="row">
+                                    <!--SCHOOL NUMBER 2-->
+                                    <div class="col-sm-2">
+                                        <p class="dates">2017-2017</p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h4 class="school-name">Grand Circus</h4>
+                                        <p class="school-title fw-light text-muted">Student / Student Aide</p>
+                                        <p class="school-description">
+                                            Learned backend web development using Java programming language, MySQL &
+                                            SpringMVC<br><br>
+
+                                            Helped teach and onboard potential new students
+                                        </p>
+
+                                    </div>
+                                </div> <!--END OF ROW 2-->
+
+                                <div class="row">
+                                    <!--SCHOOL NUMBER 2-->
+                                    <div class="col-sm-2">
+                                        <p class="dates">2017-2017</p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h4 class="school-name">Earn & Learn Tech Hire Accelerator Program</h4>
+                                        <p class="school-title fw-light text-muted">Student</p>
+                                        <p class="school-description">
+                                            10-Week Course that includes:
+                                            computer education, file sharing, browser navigation, WIFI connection,
+                                            troubleshooting, help desk customer tickets, and Microsoft Office Suite
+                                        </p>
+
+                                    </div>
+                                </div> <!--END OF ROW 2-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Certifications
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <!--CERTIFICATE NUMBER 1-->
+                                    <div class="col-sm-2">
+                                        <p class="dates">August 2021 - December 2021</p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h4 class="certificate-name">ProsperUS Detroit Entrepreneur Training</h4>
+                                        <p class="school-description fw-light text-muted">15-week entrepreneur training
+                                            program that helps participants realize their potential, develop a business
+                                            plan, and get their business off the ground</p>
+                                    </div>
+                                </div> <!--END OF ROW 1-->
+
+                                <div class="row">
+                                    <!--CERTIFICATE NUMBER 2-->
+                                    <div class="col-sm-2">
+                                        <p class="dates">April 5, 2017</p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h4 class="certificate-name">Global Information Technology</h4>
+                                        <p class="school-description fw-light text-muted">
+                                            Microsoft Excel 2013 Basic, Intermediate & Advanced
+                                        </p>
+                                    </div>
+                                </div> <!--END OF ROW 2-->
+
+
+                                <div class="row">
+                                    <!--CERTIFICATE NUMBER 3-->
+                                    <div class="col-sm-2">
+                                        <p class="dates">April 5, 2017</p>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h4 class="certificate-name">Global Information Technology</h4>
+                                        <p class="school-description fw-light text-muted">
+                                            Microsoft Office Specialist (Office Excel 2013)
+                                        </p>
+                                    </div>
+                                </div> <!--END OF ROW 3-->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--END OF ACCORDIAN-->
+            </div>
+        </div>
+    </div> <!--END OF CONTAINER-->
+
+
+
+
+    <!--FOOTER SECTION-->
+    <footer>
+        <p class="footer-text">Copyright &copy; 2023 Shakira Reid-Thomas</p>
     </footer>
-<!--END OF FOOTER SECTION-->
+    <!--END OF FOOTER SECTION-->
+
     <!--BOOTSTRAP SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

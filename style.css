@@ -9,6 +9,26 @@
 }
 
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+footer {
+    text-align: center;
+    background-color: gray;
+    padding: 45px;
+}
+
+.footer-text {
+    color: white;
+}
+
 /* ADD OVERLAY WITH TEXT */
 .image-container {
     position: relative;
@@ -39,14 +59,22 @@
     transform: translate(-50%, -50%);
 }
 
-.img-fluid{
+/* IMAGE SIZES */
+
+.img-fluid {
     width: 100px;
 }
-.bs-img{
+
+.bs-img {
     width: 169px;
 }
 
 
 .placeholder-img {
-    width: 400px;
+    width: 300px;
+}
+
+.carousel-img {
+    width: 300px;
+    height: 300px;
 }
